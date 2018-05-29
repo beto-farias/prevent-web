@@ -1,0 +1,279 @@
+/**
+* @style       Prevente
+* @media       screen
+* @version     1.0
+* @author      2 Geeks one Monkey
+* @copyright   2 Geeks one Monkey
+* @licensor    copyright
+* @url         www.2gom.com.mx
+* @contact     contacto@2gom.com.mx
+*/
+/**
+* @dgom-ui Styles
+
+	0.0 -- Font Icons
+	1.0 -- General Styles
+	2.0 -- Columna Left
+	3.0 -- Columna Right
+	4.0 -- Algo
+	5.0 -- Algo
+	6.0 -- Algo
+	7.0 -- Algo
+	8.0 -- Algo
+	9.0 -- Algo
+
+*/
+
+/*
+	0.0 -- Font Icons
+*/
+
+/*
+	1.0 -- General Styles
+*/
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 16px;
+	padding-top: 0 !important;
+}
+
+.site-menubar{
+	height: 100%;
+	top: 0 !important;
+}
+.site-menubar-body{height: 100%;}
+
+/*
+	2.0 -- Columna Left
+*/
+/* Profile */
+.dgom-ui-col-left-profile{
+	border-bottom: 1px solid #0C0C0C;
+
+	position: relative;
+	width: 100%;
+}
+.dgom-ui-col-left-profile:after{
+	content: '';
+	position: absolute;
+	top: 23px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-bottom: 1px solid #1D2529;
+	z-index: -1;
+}
+	.dgom-ui-col-left-foto{margin: 30px auto 10px; text-align: center; width: 70%;}
+		.dgom-ui-col-left-foto img{
+			border-radius: 50%;
+			height: 80px;
+			width: 80px;
+			-webkit-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
+			   -moz-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
+			        box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
+		}
+	.dgom-ui-col-left-info{margin: 0 auto 10px; width: 70%;}
+		.dgom-ui-col-left-info h4{
+			color: #FFF;
+			font-size: 1.5em;
+			margin: 0;
+		}
+		.dgom-ui-col-left-info p{
+			color: #869090;
+			font-size: .9em;
+			text-transform: uppercase;
+		}
+
+/* Filtros */
+.dgom-ui-col-left-filter{
+	margin: 0 auto;
+	width: 100%;
+}
+	.dgom-ui-col-left-filter-contend{
+		padding-bottom: 3em;
+		width: 100%;
+	}
+		.dgom-ui-col-left-filter-contend-title, .dgom-ui-col-left-filter-contend-group{
+			border-top: 1px solid #404040;
+			border-bottom: 1px solid #0C0C0C;
+			padding: 8px 14%;
+		}
+		.dgom-ui-col-left-filter-contend-title{
+			padding: 14px 6%;
+		}
+			.dgom-ui-col-left-filter-contend-title h4{
+				color: #FFF;
+				margin: 0;
+				text-transform: uppercase;
+			}
+			.dgom-ui-col-left-filter-contend-title h4 span{
+				line-height: 37px;
+			}
+			.dgom-ui-col-left-filter-contend-title h4 .pull-right a{
+				border-radius: 50%;
+				color: #FFF;
+				display: inline-block;
+				height: 36px;
+				margin-right: 2px;
+				opacity: .7;
+				padding: 9px;
+				width: 36px;
+				-webkit-transition: background-color .5s, opacity .5s;
+				   -moz-transition: background-color .5s, opacity .5s;
+				     -o-transition: background-color .5s, opacity .5s;
+				        transition: background-color .5s, opacity .5s;
+			}
+			.dgom-ui-col-left-filter-contend-title h4 .pull-right a:hover{
+				background-color: rgba(255,255,255,.2);
+				opacity: 1;
+			}
+
+		.dgom-ui-col-left-filter-contend-group{color: #FFF;}
+		.dgom-ui-col-left-filter-contend-group:last-child{border-bottom: none;}
+			.dgom-ui-col-left-filter-contend-group-identy{
+				border-radius: 50%;
+				display: inline-block;
+				height: 12px;
+				margin-left: 10px;
+				vertical-align: middle;
+				width: 12px;
+			}
+			.dgom-ui-col-left-filter-contend-group-identy-yellow{background-color: #E9ED85;}
+			.dgom-ui-col-left-filter-contend-group-identy-blue{background-color: #85C2ED;}
+			.dgom-ui-col-left-filter-contend-group-identy-purple{background-color: #EF6BDA;}
+			.dgom-ui-col-left-filter-contend-group-identy-pink{background-color: #F11B65;}
+
+/*
+	3.0 -- Columna Right
+*/
+/* Mapa */
+.dgom-ui-mapa{
+	height: 100vh;
+	position: relative;
+	width: 100%;
+}
+	.gmap{
+		height: 100vh;
+		width: 100%;
+		z-index: 999;
+	}
+
+/* Search */
+.dgom-ui-search{
+	background-color: #fff;
+	left: 50%;
+	margin-left: -40%;
+	position: absolute;
+	top: 20px;
+	width: 80%;
+	z-index: 9999;
+}
+	.dgom-ui-search .form-group{margin: 0;}
+		.dgom-ui-search .input-search{
+			padding: 10px 0;
+		}
+			.dgom-ui-search .input-search .form-control{
+				border: none;
+				border-radius: 0;
+				font-size: 1.4em;
+				padding: 0 40px;
+			}
+
+	.dgom-ui-search .dgom-ui-search-options{
+		background-color: #53BBB3;
+		padding: 6px 0;
+		text-align: center;
+	}
+		.dgom-ui-search-options-col{
+			color: #FFF;
+			display: inline-block;
+			font-size: .9em;
+			margin: 0 20px;
+			padding: 2px 8px;
+			vertical-align: middle;
+		}
+			.dgom-ui-search-options-col span{
+				padding: 0 6px;
+			}
+		.dgom-ui-search-options-col-active{
+			background-color: orange;
+			border-radius: 6px;
+		}
+
+/* Panel Flip */
+.dgom-ui-panelFlip{
+	display: inline-block;
+	height: 340px;
+	margin-right:-4px;
+	overflow-x: auto;
+	-webkit-transition:left .5s cubic-bezier(0.22, 0.61, 0.36, 1),right .5s cubic-bezier(0.22, 0.61, 0.36, 1);
+	        transition:left .5s cubic-bezier(0.22, 0.61, 0.36, 1),right .5s cubic-bezier(0.22, 0.61, 0.36, 1);
+	width: 100%;
+}
+
+/* Flip Panel */
+.dgom-ui-flip-panel{
+	background-color: transparent;
+  	height: 100%;
+  	position: relative;
+	width: 100%;
+	z-index: 999;
+}
+	.dgom-ui-front-side, .dgom-ui-back-side {
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		-webkit-backface-visibility: hidden;
+		        backface-visibility: hidden;
+		-webkit-transition: -webkit-transform 0.4s;
+		        transition: transform 0.4s;
+		-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+		        transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+	}
+	.dgom-ui-front-side {
+		background-color: #FFF;
+	}
+	.dgom-ui-back-side {
+		background-color: #FFF;
+		-webkit-transform: rotateY(-180deg);
+		        transform: rotateY(-180deg);
+	}
+	.dgom-ui-front-int-text{}
+
+/* Front Int */
+.dgom-ui-front-int{
+	height: 100%;
+	overflow-x: auto;
+	padding: 2em;
+}
+	.dgom-ui-front-int-right{
+	    display: block;
+	    margin-bottom: 1em;
+	    text-align: right;
+	}
+	.dgom-ui-front-int p{
+		color: #222;
+		font-size: 1em;
+		margin-bottom: .6em;
+		word-wrap:break-word;
+	}
+
+/* Flipped - click effect */
+.dgom-ui-flip-panel.dgom-ui-flipped .dgom-ui-front-side {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+.dgom-ui-flip-panel.dgom-ui-flipped .dgom-ui-back-side  {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+}
+
+/*
+	4.0 -- Algo
+*/
