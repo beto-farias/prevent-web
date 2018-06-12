@@ -7,3 +7,5 @@ themes/classic/views/
 protected/
 .DS_Store
 
+.vscode/launch.json
+.DS_Store
